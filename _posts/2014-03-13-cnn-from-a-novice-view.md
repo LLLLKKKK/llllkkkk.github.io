@@ -32,14 +32,14 @@ cell-plane， receptive field 和这种连接方式是从分析实际生物视�
 {:.center}
 ![A feature]({{ BASE_PATH }}/assets/afeature.png)
 
-从 $U_{S1}$ 来说吧，他直接接受输入，假设对于 $U_{S1}$ 中的 $k_{S11}$,$k_{S12}$,$k_{S13}$ 这三个 plane，分别识别 (a)，(b)，(c) 这三个 feature。$U_{S1}$ 中每个 plane 都会接收全部 input，plane 中一个 cell 会接收其 receptive field 中的输入。而如果我们输入 A 的话，feature(a) 就会出现在 $k_{S1}$ 中的一个 cell 的 receptive field，这个 cell 激发，传递到下一层。相似的，其他两个 feature 也会被相应 $k_{S2}$，$k_{S3}$ 中的 cell 检测到。$U_{S2}$ （我们暂时忽略中间的 $U_{C1}$）是跟上一级全相连的，也就是说 $U_{S2}$ 的 $k_{S21}$, $k_{S22}$, ${k_S23}$ plane 都接受了 $k_{S11}$, $k_{S12}$, ${k_S13}$ 的输入。在这一级的 plane 中，假设$k_{S21}$ 是当这三个形状分别在上，左下，右下时激发，此时恰好符合激发条件，$k_{S21}$ 识别的就是 A。
+从 $U_{S1}$ 来说吧，他直接接受输入，假设对于 $U_{S1}$ 中的 $k_{S11}$,$k_{S12}$,$k_{S13}$ 这三个 plane，分别识别 (a)，(b)，(c) 这三个 feature。$U_{S1}$ 中每个 plane 都会接收全部 input，plane 中一个 cell 会接收其 receptive field 中的输入。而如果我们输入 A 的话，feature(a) 就会出现在 $k_{S1}$ 中的一个 cell 的 receptive field，这个 cell 激发，传递到下一层。相似的，其他两个 feature 也会被相应 $k_{S2}$，$k_{S3}$ 中的 cell 检测到。$U_{S2}$ （我们暂时忽略中间的 $U_{C1}$）是跟上一级全相连的，也就是说 $U_{S2}$ 的 $k_{S21}$, $k_{S22}$, $k_{S23}$ plane 都接受了 $k_{S11}$, $k_{S12}$, $k_{S13}$ 的输入。在这一级的 plane 中，假设$k_{S21}$ 是当这三个形状分别在上，左下，右下时激发，此时恰好符合激发条件，$k_{S21}$ 识别的就是 A。
 
 这个 A 的例子是原文的缩写版，可以对应到原文的 $U_{S2}$ 到 $U_{S3}$ 部分：
 
 {:.center}
 ![feature learn]({{ BASE_PATH }}/assets/fealearn.png)
 
-这样说起来似乎很奇妙的样子，但是说起来又有很多问题。
+这样看起来似乎很奇妙的样子，但是又有很多问题。
 
 首先，怎么知道 $k_{S11}$ 会去感知 feature(a) 这个 feature 呢？做了这么多假设，plane 真的会学到这些 feature 么？当然这里只是个比方，根据实际的训练，可能 $k_{S11}$ 探测的是 feature(b) 或者 feature(c)，或者其他奇奇怪怪的也说不定。通过训练，神经元会学习根据数据学习到这些可以“明辨是非”的 feature，并且通过学习不断强化，使网络具备 pattern recognition 的能力。
 
