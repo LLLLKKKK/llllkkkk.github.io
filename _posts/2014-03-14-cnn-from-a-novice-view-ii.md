@@ -70,7 +70,7 @@ Boosted LeNet-4 由 3 个 LeNet-4 组成。第一个按常规方法训练。第�
 
 其实，在上篇 blog 中，为了理解方便我说 neocognitron 的 cell 在接受多个输入时是取 average 的，实际上 neocognitron 是取 input 中的 max。这也是受生物上启发的 [Hubel](#Hubel) 。不过后来大家都开始用 $\sigma$ 这货来做（取和，也就是 average）。然而， max pooling 并没有沉默。
 
-首先用 "pool" 这个词的似乎是 [Serre](#Serre)，pool 就是表示对一个“池子” ~~一坨~~ 的 input 做一个操作，使其变成变成一个量。[Serre](#Serre) 描述的也是一个 network 型的识别方法，不过跟 CNN 不同的是，它没有放任自由的训练，综合了一些视觉中的方法（Gabol filter, SIFT-feature）作为中间的 layer 来提取特征。不过悲催的是这样的效果并没有 bench 上的飞跃。不过 max pooling 的精神长存。
+首先用 "pool" 这个词的似乎是 [Serre](#Serre)，pool 就是表示对一个“池子” <del>一坨</del> 的 input 做一个操作，使其变成变成一个量。[Serre](#Serre) 描述的也是一个 network 型的识别方法，不过跟 CNN 不同的是，它没有放任自由的训练，综合了一些视觉中的方法（Gabol filter, SIFT-feature）作为中间的 layer 来提取特征。不过悲催的是这样的效果并没有 bench 上的飞跃。不过 max pooling 的精神长存。
 
 经过 [Scherer](#Scherer)、[Boureau](#Boureau)，max pooling 被验证是一种有效的方法，CNN 中的 subsampling layer 也就渐渐的进化成了 max pooling layer。至此，当代 CNN 的 architecture 已经基本形成。在 ImageNet [Krizhevsky](#Krizhevsky) 中，CNN 更是完爆了所有 the state of art 方法，展现了 deep neural network 的强大威力。
 
