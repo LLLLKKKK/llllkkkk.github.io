@@ -8,7 +8,7 @@ tags: [CNN, computer vision, machine learning]
 {% include JB/setup %}
 
 ## LeNet-5
-上篇 blog 的结尾有说到 neogonitron 和后来 [LeCun89](#LeCun89) 的 CNN 都存在一定问题。他们都用某一个 output cell 的输出作为某一个 class 的 likelihood。也就是说，对于一个训练好的网络，输入一个图片，最后 output layer 中的 cell 谁的输出大，那么这个图片就会被认为是这个 cell 的 label。
+[上篇 blog]({{ BASE_PATH}}/2014/03/13/cnn-from-a-novice-view/) 的结尾有说到 neogonitron 和后来 [LeCun89](#LeCun89) 的 CNN 都存在一定问题。他们都用某一个 output cell 的输出作为某一个 class 的 likelihood。也就是说，对于一个训练好的网络，输入一个图片，最后 output layer 中的 cell 谁的输出大，那么这个图片就会被认为是这个 cell 的 label。
 
 * 就拿手写的 l，1，O, 0，o 来说，如果没有上下文语义的帮助，无论人和计算机都很难搞定。一方面是很难训练；另一方面这样输出只是字符，很难结合语义分析。试想，如果我们的 cell 是在“输入是一个圈”时激发，那么我们接下来就可以根据语义继续判断是 uppercase O，lowercase O 或者零了。
 
@@ -74,7 +74,7 @@ Boosted LeNet-4 由 3 个 LeNet-4 组成。第一个按常规方法训练。第�
 
 经过 [Scherer](#Scherer)、[Boureau](#Boureau)，max pooling 被验证是一种有效的方法，CNN 中的 subsampling layer 也就渐渐的进化成了 max pooling layer。至此，当代 CNN 的 architecture 已经基本形成。在 ImageNet [Krizhevsky](#Krizhevsky) 中，CNN 更是完爆了所有 the state of art 方法，展现了 deep neural network 的强大威力。
 
-至于 [Krizhevsky](#Krizhevsky) 到底有多厉害（diao），留着下次继续表好了~~ EOF XD
+至于 [Krizhevsky](#Krizhevsky) 到底有多厉害<del>diao</del>，留着下次继续表好了~~ EOF XD
 
 ## Reference:
 ### <a name="LeCun89"></a> LeCun, Y., Boser, B., Denker, J. S., Henderson, D., Howard, R. E., Hubbard, W., & Jackel, L. D. (1989). Backpropagation applied to handwritten zip code recognition. Neural computation, 1(4), 541-551.
