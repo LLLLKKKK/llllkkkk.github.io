@@ -16,12 +16,15 @@ tags: [CNN, computer vision, machine learning]
 
 * 除了 accept character 之外，对于 reject non-character 来说，sigmoid 的表现并不够好。
 
+
 下面是盗图自 [wikipedia](http://en.wikipedia.org/wiki/Sigmoid_function) 的 sigmoid function。
 
 {:.center}
-![feature learn]({{ BASE_PATH }}/assets/sigmoid.svg =x50)
+<img src="{{ BASE_PATH }}/assets/sigmoid.svg" class="center" style="width: 300px;"/>
 
 LeNet-5 利用 Euclidean Radial Basis Function units (RBF) 组成 output layer 来避免这三个问题（其实这里是倒叙啦，原文是因为这三个原因所以采用 RBF =_=b）。
+
+<!--more-->
 
 对于 RBF unit $y_i$ ，输出根据下式计算：
 
@@ -29,6 +32,7 @@ $$ y_i=\sum\limits_j (x_j - w_{ij})^2$$
 
 也就是说每一个 RBF 都在计算输入和他参数 $_{ij}$ 的欧式距离。输出越大，距离越远，也就是越不可能属于这个类（negative likelihood）。而对于每个 unit，参数是人工选择的（至少起始是要人肉去做）。参数如下图：
 
+{:.center}
 ![lenet charset]({{ BASE_PATH }}/assets/lenetcharset.png)
 
 哈，这样一看就明白了吧。实际上网络就是起到了滤波和标准化的作用，最后跟 char set 一匹配，就知道谁是谁了！
@@ -43,6 +47,7 @@ F6 和 output 之间的 connection 就是上面所说的 RBF 的关系~
 
 除了 RBF 的应用，LeNet-5 还有什么亮点呢。下图是 S2 中的 feature map 和 C3$ 中 feature map 的连接方式。
 
+{:.center}
 ![lenet5 conn]({{ BASE_PATH }}/assets/lenetconn.png)
 
 在这里，module 之间的 feature map 不在是全相连，而是有选择的相连。C3 的 feature maps 在这里分别是前六个连接 S2 连续 3 个 feature map，后六个连续 4 个 S2 feature map，之后是一些非连续 4 个 feature map 相连，最后一个和所有 feature map 相连。
