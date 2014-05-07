@@ -16,7 +16,7 @@ body {
   text-shadow: 1px 1px 1px #000;
   height: 100%;
   font-family: 'Oxygen', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 /* line 26, ../_sass/_base.scss */
@@ -408,9 +408,4 @@ div.sidebar section img.icon {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-}
-
-.center {
-  text-align: center;
-  margin: 0 auto;
 }
