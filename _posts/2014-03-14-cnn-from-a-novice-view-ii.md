@@ -77,11 +77,11 @@ Boosted LeNet-4 由 3 个 LeNet-4 组成。第一个按常规方法训练。第�
 至于 [Krizhevsky](#Krizhevsky) 到底有多厉害<del>diao</del>，留着下次继续表好了~~ EOF XD
 
 ## Reference:
-### <a name="LeCun89"></a> LeCun, Y., Boser, B., Denker, J. S., Henderson, D., Howard, R. E., Hubbard, W., & Jackel, L. D. (1989). Backpropagation applied to handwritten zip code recognition. Neural computation, 1(4), 541-551.
-### <a name="LeCun98"></a> LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998). Gradient-based learning applied to document recognition. Proceedings of the IEEE, 86(11), 2278-2324.
-### <a name="Schapire"></a> Schapire, R. E. (1990). The strength of weak learnability. Machine learning, 5(2), 197-227.
-### <a name="Hubel"></a> Hubel, D. H., & Wiesel, T. N. (1962). Receptive fields, binocular interaction and functional architecture in the cat's visual cortex. The Journal of physiology,160(1), 106.
-### <a name="Serre"></a> Serre, T., Wolf, L., & Poggio, T. (2005, June). Object recognition with features inspired by visual cortex. In Computer Vision and Pattern Recognition, 2005. CVPR 2005. IEEE Computer Society Conference on (Vol. 2, pp. 994-1000). IEEE.
-### <a name="Scherer"></a> Scherer, D., Müller, A., & Behnke, S. (2010). Evaluation of pooling operations in convolutional architectures for object recognition. In Artificial Neural Networks–ICANN 2010 (pp. 92-101). Springer Berlin Heidelberg.
-### <a name="Boureau"></a> Boureau, Y. L., Ponce, J., & LeCun, Y. (2010). A theoretical analysis of feature pooling in visual recognition. In Proceedings of the 27th International Conference on Machine Learning (ICML-10) (pp. 111-118).
-### <a name="Krizhevsky"></a> Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). ImageNet Classification with Deep Convolutional Neural Networks. In NIPS (Vol. 1, No. 2, p. 4).
+#### <a name="LeCun89"></a> LeCun, Y., Boser, B., Denker, J. S., Henderson, D., Howard, R. E., Hubbard, W., & Jackel, L. D. (1989). Backpropagation applied to handwritten zip code recognition. Neural computation, 1(4), 541-551.
+#### <a name="LeCun98"></a> LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998). Gradient-based learning applied to document recognition. Proceedings of the IEEE, 86(11), 2278-2324.
+#### <a name="Schapire"></a> Schapire, R. E. (1990). The strength of weak learnability. Machine learning, 5(2), 197-227.
+#### <a name="Hubel"></a> Hubel, D. H., & Wiesel, T. N. (1962). Receptive fields, binocular interaction and functional architecture in the cat's visual cortex. The Journal of physiology,160(1), 106.
+#### <a name="Serre"></a> Serre, T., Wolf, L., & Poggio, T. (2005, June). Object recognition with features inspired by visual cortex. In Computer Vision and Pattern Recognition, 2005. CVPR 2005. IEEE Computer Society Conference on (Vol. 2, pp. 994-1000). IEEE.
+#### <a name="Scherer"></a> Scherer, D., Müller, A., & Behnke, S. (2010). Evaluation of pooling operations in convolutional architectures for object recognition. In Artificial Neural Networks–ICANN 2010 (pp. 92-101). Springer Berlin Heidelberg.
+#### <a name="Boureau"></a> Boureau, Y. L., Ponce, J., & LeCun, Y. (2010). A theoretical analysis of feature pooling in visual recognition. In Proceedings of the 27th International Conference on Machine Learning (ICML-10) (pp. 111-118).
+#### <a name="Krizhevsky"></a> Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). ImageNet Classification with Deep Convolutional Neural Networks. In NIPS (Vol. 1, No. 2, p. 4).
