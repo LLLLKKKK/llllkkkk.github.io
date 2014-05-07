@@ -1,6 +1,13 @@
 language: ruby
 rvm:
   - 2.1.1
+  - 2.1.0
+  - jruby-18mode
+  - jruby-19mode
+  - rbx
+  - ruby-head
+  - jruby-head
+  - ree
 install:
   - bundle install
 script: bundle exec jekyll build
