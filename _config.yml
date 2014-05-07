@@ -4,7 +4,7 @@ permalink: /:year/:month/:day/:title
 
 excerpt_separator: <!--more-->
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: ["vendor", "Gemfile", ".travis.yml", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
 # Themes are encouraged to use these universal variables 
