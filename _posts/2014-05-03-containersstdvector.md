@@ -1251,7 +1251,7 @@ std::vector<double>(myvector).swap(myvector);
                                           __y.begin(), __y.end()); }
 {% endhighlight %}
 
-== 和 &lt; 向来都是说明问题的两个。
+\= \= 和 &lt; 向来都是说明问题的两个。
 
 还有幽默感十足的 reverse\_iterator。
 
@@ -1297,7 +1297,7 @@ std::vector<double>(myvector).swap(myvector);
       { return &(operator*()); }
 {% endhighlight %}
 
-= = 反正我觉得我不会用 reverse\_iterator ..... 或许库里某个地方谁会用到？
+\= \= 反正我觉得我不会用 reverse\_iterator ..... 或许库里某个地方谁会用到？
 reverse 的含义就是 ++ 是 --， -- 是 ++
 
 {% highlight cpp %}
