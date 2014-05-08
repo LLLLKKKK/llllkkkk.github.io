@@ -126,12 +126,12 @@ _GLIBCXX_END_NAMESPACE_VERSION
 \_\_allocator\_base 应该在 #include &lt;bits/c++allocator.h&gt; 里面，然而目前并没有这个文件。。。makefile 搞得鬼
 
 Makefile.am
-{% highlight cpp %}
+{% highlight makefile %}
  $(LN_S) ${glibcxx_srcdir}/$(ALLOCATOR_H) c++allocator.h || true ;\
 {% endhighlight %}
 
 configure
-{% highlight cpp %}
+{% highlight makefile %}
   # Set configure bits for specified locale package
   case ${enable_libstdcxx_allocator_flag} in
     bitmap)
@@ -159,7 +159,7 @@ configure
 
 看来是对 new, pool, mt, bitmap 这几种做了封装。我想我们的 default 应该是 new allocator 吧~
 
-{% highlight cpp %}
+{% highlight makefile %}
   if test $enable_libstdcxx_allocator_flag = auto; then
     case ${target_os} in
       linux* | gnu* | kfreebsd*-gnu | knetbsd*-gnu)
