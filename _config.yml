@@ -7,6 +7,9 @@ excerpt_separator: <!--more-->
 exclude: ["vendor", "Gemfile", ".travis.yml", ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
+paginate: 5
+paginate_path: "page:num"
+
 markdown: kramdown
 
 # Themes are encouraged to use these universal variables 

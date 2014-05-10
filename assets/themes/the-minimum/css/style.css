@@ -852,3 +852,9 @@ pre {
     margin-right: 360px;
   }
 }
+
+.pagination {
+  font-size: 1.5em;
+  font-weight: bold; 
+  line-height: 2em;
+}
