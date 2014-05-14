@@ -158,7 +158,7 @@ tags: [C++, STL, code reading, algorithm]
     }
 {% endhighlight %}
 
-`for_each` 就没什么好说的了。`for_each` 最后悔把传进来的 Function 再返回回去。
+`for_each` 就没什么好说的了。`for_each` 最后会把传进来的 Function 再返回回去。
 
 {% highlight cpp %}
   template<typename _InputIterator, typename _Function>
