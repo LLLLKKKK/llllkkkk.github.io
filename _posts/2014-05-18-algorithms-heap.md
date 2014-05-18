@@ -7,7 +7,7 @@ tags: [C++, STL, code reading, algorithm]
 ---
 heap 是非常基础的数据结构，姥姥书中也有很详尽的介绍。STL 中，我们可以在一段 RandomAccessIterator 上 make\_heap，然后进行 pop\_heap 或者 push\_heap 来加入元素或者删除元素。默认的 heap 操作都是用 operator less 定义的，形成的是最大堆。
 
-首先先来热身，看看 is\_heap 以及 is\_heap\_until。既然 heap 的算法已经非常熟悉了，那么就先来 yy 一下怎么实现的吧。heap 可以看做数组中的二叉树，只要保证 parent 比两个 child 都大就可以了，也就是 comp(parent, child) || comp(parent, child + 1) 为 false。parent 从开头到 range / 2 就可以了，不过要注意 child + 1 这个在边界是否存在。
+首先先来热身，看看 is\_heap 以及 is\_heap\_until。既然 heap 的算法已经非常熟悉了，那么就先来 yy 一下怎么实现的吧。heap 可以看做数组中的二叉树，只要保证 parent 比两个 child 都大就可以了，也就是 comp(parent, child) \|\| comp(parent, child + 1) 为 false。parent 从开头到 range / 2 就可以了，不过要注意 child + 1 这个在边界是否存在。
 
 {% highlight cpp %}
     _Distance
